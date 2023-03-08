@@ -1,6 +1,6 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: FameLadySquad
@@ -18,8 +18,8 @@ dataSources:
         - User
       abis:
         - name: FameLadySquad
-          file: ./abis/FameLadySquad.json
+          file: FameLadySquad\abis\FameLadySquad.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./src/fame-lady-squad.ts
+      file: FameLadySquad\FameLadySquad.wasm
